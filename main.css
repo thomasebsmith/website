@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Arial", "Helvetica", sans-serif;
+  margin: 2.5%;
+}
+
+header {
+  width: 100%;
+}
+h1 {
+  letter-spacing: 2pt;
+  text-align: center;
+}
+nav > ul {
+  text-align: center;
+}
+nav > ul > li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 5%;
+}
+nav > ul > li > a {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav > ul > li.selected > a {
+  text-decoration: underline;
+}
+nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: lightgreen;
+}
