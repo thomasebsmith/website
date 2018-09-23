@@ -1,15 +1,19 @@
 body {
-  background-color: black;
-  color: white;
+  background-color: #141414;
+  color: #EEEEEE;
   font-family: "Arial", "Helvetica", sans-serif;
   margin: 2.5%;
 }
 
 header {
+  border-bottom: 1px solid #EEEEEE;
   width: 100%;
 }
 h1 {
-  letter-spacing: 2pt;
+  color: #FFFFFF;
+  font-size: 3em;
+  letter-spacing: 3pt;
+  margin: 0;
   text-align: center;
 }
 nav > ul {
@@ -21,7 +25,7 @@ nav > ul > li {
   margin-right: 5%;
 }
 nav > ul > li > a {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
   text-decoration: none;
 }
@@ -33,5 +37,5 @@ nav > ul > li > a:hover {
 }
 
 a {
-  color: lightgreen;
+  color: #55FF77;
 }
