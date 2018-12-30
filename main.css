@@ -39,3 +39,32 @@ nav > ul > li > a:hover {
 a {
   color: #55FF77;
 }
+
+form {
+  margin: 2%;
+}
+
+input, textarea {
+  background: #555555;
+  border: 1px solid #555555;
+  color: white;
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+
+input[name=from] {
+  min-width: 200px;
+}
+
+input[name=subject]  {
+  min-width: 250px;
+}
+
+input[type=submit] {
+  background: #444444;
+  border-radius: 3px;
+}
+
+textarea[name=body] {
+  width: 100%;
+  height: 200px;
+}
