@@ -37,6 +37,11 @@ nav > ul > li > a:hover {
   text-decoration: underline;
 }
 
+article {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
 a {
   color: #4488D0;
 }
