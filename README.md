@@ -8,3 +8,8 @@ his programming projects.
 - Use a simple, consistent color scheme
 - Make the site lightweight
 - Highlight important content
+
+### Deployment
+This site can be deployed by cloning this repository and hosting it as a static
+site. Ideally, README.md should be excluded from deployment. The site is
+optimized for GitHub pages but should work in any standard hosting environment.
