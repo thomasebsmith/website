@@ -94,3 +94,19 @@ textarea[name=body] {
   height: 200px;
   padding: 5px;
 }
+
+/* Dark mode styles */
+@media(prefers-color-scheme: dark) {
+  body {
+    background-color: #222222;
+    color: #BCBCBC;
+  }
+  header {
+    border-bottom: 1px solid #787878;
+  }
+  input, textarea {
+    background: #555555;
+    border: 1px solid #787878;
+    color: #EDEDED;
+  }
+}
