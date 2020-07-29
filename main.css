@@ -20,12 +20,13 @@ h1 {
   text-align: center;
 }
 nav > ul {
+  padding: 0;
   text-align: center;
 }
 nav > ul > li {
   display: inline-block;
   list-style-type: none;
-  margin-right: 5%;
+  margin: 10px 20px;
 }
 nav > ul > li > a {
   font-size: 120%;
