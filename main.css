@@ -5,6 +5,7 @@ body {
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: medium;
   margin: 2.5%;
+  margin: calc(1.5% + 25px);
 }
 
 /* Header styles */
