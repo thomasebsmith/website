@@ -20,6 +20,7 @@ h1 {
   letter-spacing: 3pt;
   margin: 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 nav > ul {
@@ -37,6 +38,7 @@ nav > ul > li > a {
   font-size: 120%;
   font-weight: bold;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 nav > ul > li.selected > a, nav > ul > li > a:hover {
