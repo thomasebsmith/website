@@ -1,7 +1,9 @@
 # Thomas Smith's Website
 This repository contains static HTML and CSS files for Thomas Smith's website.
-The site is hosted on GitHub pages and contains information about Thomas and
-his programming projects. You can also contact Thomas using the website.
+The site is hosted on GitHub pages at
+[thomasebsmith.github.io](https://thomasebsmith.github.io). It contains
+information about Thomas and his programming projects. You can also contact
+Thomas using the website.
 
 ## Philosophy
 - Avoid JavaScript whenever possible
