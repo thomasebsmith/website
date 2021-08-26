@@ -17,3 +17,7 @@ site. Ideally, README.md should be excluded from deployment. The site is
 optimized for GitHub pages but should work in any standard hosting environment.
 This site should be hosted at the root of a domain, or else relative URLs
 would need to be modified.
+
+## License
+This site is *not* released as open-source software. It is source-available;
+however, copyright and ownership are retained fully by Thomas Smith.
