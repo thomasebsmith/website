@@ -6,9 +6,9 @@ information about Thomas, descriptions of his programming projects, and ways to
 contact him.
 
 ## Philosophy
-- Avoid JavaScript whenever possible
+- Avoid JavaScript when possible
 - Use a simple, consistent color scheme
-- Make the site lightweight
+- Make the site fast and lightweight
 - Highlight important content
 
 ## Deployment
