@@ -96,9 +96,9 @@ input[type=submit]:hover {
 }
 
 textarea[name=body] {
-  width: 100%;
   height: 200px;
   padding: 5px;
+  width: 100%;
 }
 
 /* Dark mode styles */
