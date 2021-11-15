@@ -103,23 +103,27 @@ textarea[name=body] {
 
 /* Dark mode styles */
 @media(prefers-color-scheme: dark) {
+  /* Global */
   body {
     background-color: #222222;
     color: #BCBCBC;
   }
 
+  /* Header */
   header {
     border-bottom: 1px solid #787878;
   }
 
+  /* Article */
+  a {
+    color: #2299CC;
+  }
+
+  /* User input */
   input, textarea {
     background: #333333;
     border: 1px solid #787878;
     color: #EDEDED;
-  }
-
-  a {
-    color: #2299CC;
   }
 
   input[type=submit] {
