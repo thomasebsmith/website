@@ -18,6 +18,14 @@ optimized for GitHub Pages but should work in any standard hosting environment.
 This site should be hosted at the root of a domain, or else relative URLs
 would need to be modified.
 
+For example, to deploy it with Python:
+```sh
+$ git clone https://github.com/thomasebsmith/thomasebsmith.github.io.git site
+$ cd site
+$ python3 -m http.server 8000
+Serving HTTP on :: port 8000 (http://[::]:8000/) ...
+```
+
 ## License
-This site is *not* released as open-source software. It is source-available;
+This site is **not** released as open-source software. It is source-available;
 however, copyright and ownership are retained fully by Thomas Smith.
