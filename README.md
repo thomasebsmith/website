@@ -18,7 +18,7 @@ optimized for GitHub Pages but should work in any standard hosting environment.
 This site should be hosted at the root of a domain, or else relative URLs
 would need to be modified.
 
-For example, to deploy it with Python:
+For example, to deploy it with Python 3 at http://localhost:8000:
 ```sh
 $ git clone https://github.com/thomasebsmith/thomasebsmith.github.io.git site
 $ cd site
