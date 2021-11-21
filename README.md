@@ -25,6 +25,7 @@ $ cd site
 $ python3 -m http.server 8000
 Serving HTTP on :: port 8000 (http://[::]:8000/) ...
 ```
+Note: This does not exclude README.md from deployment.
 
 ## License
 This site is **not** released as open-source software. It is source-available;
