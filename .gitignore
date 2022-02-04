@@ -3,3 +3,6 @@
 
 # Temporary Editor Files
 *.swp
+
+# Build output
+build
