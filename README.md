@@ -12,20 +12,20 @@ contact him.
 - Highlight important content
 
 ## Deployment
-This site can be deployed by cloning this repository and hosting it as a static
-site. Ideally, README.md should be excluded from deployment. The site is
-optimized for GitHub Pages but should work in any standard hosting environment.
-This site should be hosted at the root of a domain, or else relative URLs
-would need to be modified.
+This site can be deployed by cloning this repository, running its build script,
+and hosting the build output as a static site. The site is optimized for GitHub
+Pages but should work in any standard hosting environment. This site should be
+hosted at the root of a domain, or else relative URLs must be modified.
 
 For example, to deploy it with Python 3 at http://localhost:8000:
 ```sh
 $ git clone https://github.com/thomasebsmith/thomasebsmith.github.io.git site
 $ cd site
+$ make build/release
+$ cd build/release/final
 $ python3 -m http.server 8000
 Serving HTTP on :: port 8000 (http://[::]:8000/) ...
 ```
-Note: This does not exclude README.md from deployment.
 
 ## License
 This site is **not** released as open-source software. It is source-available;
