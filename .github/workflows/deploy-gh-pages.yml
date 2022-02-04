@@ -25,3 +25,6 @@ jobs:
         with:
           branch: gh-pages
           folder: build/release/final
+          git-config-name: github-actions[bot]
+          git-config-email: <>
+          single-commit: true
