@@ -1,15 +1,15 @@
 # Thomas Smith's Website
-This repository contains static HTML and CSS files for Thomas Smith's website.
-The site is hosted on GitHub Pages at
+This repository contains the code for Thomas Smith's website.
+The site is hosted statically on GitHub Pages at
 [thomasebsmith.github.io](https://thomasebsmith.github.io). It contains
 information about Thomas, descriptions of his programming projects, and ways to
 contact him.
 
 ## Philosophy
-- Avoid JavaScript when possible
 - Use a simple, consistent color scheme
 - Make the site fast and lightweight
 - Highlight important content
+- Make the site cross-browser compatible
 
 ## Deployment
 This site can be deployed by cloning this repository, running its build script,
