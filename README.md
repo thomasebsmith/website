@@ -5,12 +5,6 @@ The site is hosted statically on GitHub Pages at
 information about Thomas, descriptions of his programming projects, and ways to
 contact him.
 
-## Philosophy
-- Use a simple, consistent color scheme
-- Make the site fast and lightweight
-- Highlight important content
-- Make the site cross-browser compatible
-
 ## Deployment
 This site can be deployed by cloning this repository, running its build script,
 and hosting the build output as a static site. The site is optimized for GitHub
@@ -26,6 +20,12 @@ $ cd build/release/final
 $ python3 -m http.server 8000
 Serving HTTP on :: port 8000 (http://[::]:8000/) ...
 ```
+
+## Philosophy
+- Use a simple, consistent color scheme
+- Make the site fast and lightweight
+- Highlight important content
+- Make the site cross-browser compatible
 
 ## License
 This site is **not** released as open-source software. It is source-available;
