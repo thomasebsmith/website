@@ -1,7 +1,11 @@
-# macOS Metadata
+# macOS metadata
 .DS_Store
 
-# Temporary Editor Files
+# Linux temporary files
+.fuse_hidden*
+.nfs*
+
+# Temporary editor files
 *.swp
 
 # Build output
