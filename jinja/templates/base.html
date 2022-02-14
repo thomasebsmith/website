@@ -1,0 +1,37 @@
+{% macro nav_items() %}
+{% for nav_file, nav_name in nav.items() -%}
+<li
+  {%- if selected == nav_file %} class="selected"
+  {%- endif %}><a href="{{ nav_file }}">{{ nav_name }}</a></li>
+{% endfor %}
+{% endmacro -%}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="{% block description required %}{% endblock %}">
+    <title>{{ name }} | {% block title required %}{% endblock %}</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+  </head>
+  <body>
+    <header>
+      <h1>{{ name }}</h1>
+      <nav>
+        <ul>
+          {% filter indent(width=10) -%}
+          {{ nav_items() }}
+          {%- endfilter %}
+        </ul>
+      </nav>
+    </header>
+    <article>
+      {% filter indent(width=6) -%}
+      {% block content required %}{% endblock %}
+      {%- endfilter %}
+    </article>
+  </body>
+</html>
