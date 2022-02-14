@@ -1,5 +1,6 @@
 # Configuration #
 # ============= #
+VENV_DIR = .venv
 BUILD_DIR = build
 RELEASE_DIR = ${BUILD_DIR}/release
 DEBUG_DIR = ${BUILD_DIR}/debug
@@ -16,6 +17,10 @@ ${BUILD_DIR}: ${RELEASE_DIR} ${DEBUG_DIR}
 
 ${RELEASE_DIR}: ${RELEASE_DIR}/final
 ${DEBUG_DIR}: ${DEBUG_DIR}/final
+
+${VENV_DIR}:
+	python3 -m venv .venv
+	.venv/bin/pip install --upgrade pip Jinja2
 
 ${RELEASE_DIR}/final: ${RELEASE_DIR}/static
 	rm -rf $@
@@ -42,3 +47,7 @@ ${DEBUG_DIR}/static: ${STATIC_FILES}
 .PHONY: clean
 clean:
 	rm -rf ${BUILD_DIR}
+
+.PHONY: deepclean
+deepclean: clean
+	rm -rf ${VENV_DIR}

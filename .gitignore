@@ -8,5 +8,9 @@
 # Temporary editor files
 *.swp
 
+# Python files
+.venv
+__pycache__
+
 # Build output
 /build
