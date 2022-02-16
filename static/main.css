@@ -101,6 +101,10 @@ textarea[name=body] {
   width: 100%;
 }
 
+h2.has-subheading {
+  margin-bottom: 0.2em;
+}
+
 /* Dark mode styles */
 @media(prefers-color-scheme: dark) {
   /* Global */
