@@ -6,6 +6,10 @@
 {% endfor %}
 {% endmacro -%}
 
+{% macro external_link(href, display_text) -%}
+<a target="_blank" rel="noreferrer" href="{{ href }}">{{ display_text }}</a>
+{%- endmacro -%}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

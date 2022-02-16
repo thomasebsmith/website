@@ -8,9 +8,8 @@
 
 {% block content %}
 <p>Hi, I'm Thomas, a software engineer at
-  <a target="_blank" rel="noreferrer"
-     href="https://www.ocient.com">Ocient</a>.
-I love programming, camping, and learning new things.
+{{ external_link("https://www.ocient.com", "Ocient") }}.
+I love programming, camping, and learning new things.</p>
 
 <h2>About Me</h2>
 <p>I graduated from the University of Michigan in December 2021 with
@@ -19,14 +18,13 @@ a BSE in Computer Science.</p>
 <p>My favorite programming language is Swift, and I enjoy programming
 in C++, C#, and JavaScript as well.</p>
 
-<p>I'm on <a target="_blank" rel="noreferrer"
-           href="https://github.com/thomasebsmith">GitHub</a> and
-<a target="_blank" rel="noreferrer"
- href="https://www.linkedin.com/in/thomasebsmith/">LinkedIn</a>, too.</p>
+<p>I'm on {{ external_link("https://github.com/thomasebsmith", "GitHub") }} and
+{{ external_link("https://www.linkedin.com/in/thomasebsmith/", "LinkedIn") }},
+too.</p>
 
 <p>If you want to get in touch with me, you can <a href="contact.html">
 contact me here</a>.</p>
 
 <h2>Projects</h2>
-Check out my projects <a href="projects.html">here</a>!</p>
+<p>Check out my projects <a href="projects.html">here</a>!</p>
 {% endblock %}
