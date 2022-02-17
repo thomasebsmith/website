@@ -10,6 +10,11 @@
 <a target="_blank" rel="noreferrer" href="{{ href }}">{{ display_text }}</a>
 {%- endmacro -%}
 
+{% macro h2_with_subheading(title_text, subheading_text) -%}
+<h2 class="has-subheading">{{ title_text }}</h2>
+<em>{{ subheading_text }}</em>
+{%- endmacro -%}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
