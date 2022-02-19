@@ -8,12 +8,20 @@
 
 {% block content %}
 <form method="POST"
-      action="https://umich.edu/cgi-bin/htmail/thsm%40umich.edu">
-  From: <input name="from" type="email" placeholder="Enter your email address">
+      action="https://cgi.www.umich.edu/cgi-bin/htmail/thsm%40umich.edu">
+  <div class="input-line">
+    From:
+    <input name="from" type="email" placeholder="Enter your email address">
+  </div>
 
-  Subject: <input name="subject" type="text" placeholder="Enter a subject">
+  <div class="input-line">
+    Subject:
+    <input name="subject" type="text" placeholder="Enter a subject">
+  </div>
 
-  <input name="ccme" type="checkbox" checked>Send me a copy of this message
+  <div class="input-line">
+    <input name="ccme" type="checkbox" checked>Send me a copy of this message
+  </div>
 
   <p>Please enter a message in the text box below. It will be sent to Thomas
      Smith when you click on the "Send Message" button.</p>
@@ -21,5 +29,7 @@
   <textarea name="body"></textarea>
 
   <input type="submit" value="Send Message">
+
+  <input name="successURL" type="hidden" value="{{ root_url }}/contact.html">
 </form>
 {% endblock %}

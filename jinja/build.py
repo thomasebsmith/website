@@ -11,7 +11,8 @@ CONTEXT = {
         "index.html": "Home",
         "projects.html": "Projects",
         "contact.html": "Contact"
-    }
+    },
+    "root_url": "https://thomasebsmith.github.io"
 }
 
 def get_args():
