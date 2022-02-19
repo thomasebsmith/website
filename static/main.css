@@ -71,6 +71,11 @@ input, textarea {
   padding: 3px;
 }
 
+input[type=text], input[type=email] {
+  display: block;
+  margin-bottom: 24px;
+}
+
 input[name=from] {
   min-width: 200px;
 }
