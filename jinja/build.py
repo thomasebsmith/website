@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from argparse import ArgumentParser
+from argparse import ArgumentParser, Namespace
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -15,7 +15,8 @@ CONTEXT = {
     "root_url": "https://thomasebsmith.github.io"
 }
 
-def get_args():
+def get_args() -> Namespace:
+    """Get the command line arguments passed to this program"""
     parser = ArgumentParser(description="Process Jinja templates")
     parser.add_argument(
         "templates",
@@ -30,6 +31,7 @@ def get_args():
     return parser.parse_args()
 
 def main():
+    """Build the Jinja templates for this site"""
     args = get_args()
 
     def filter_template(name):
