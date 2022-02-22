@@ -30,25 +30,27 @@ def get_args() -> Namespace:
         help="a directory to which to output Jinja templates")
     return parser.parse_args()
 
-def main():
-    """Build the Jinja templates for this site"""
-    args = get_args()
-
+def compile_templates(templates_dir: Path, output_dir: Path):
     def filter_template(name):
         return name != "base.html" and name.endswith(".html")
 
-    loader = FileSystemLoader(args.templates)
+    loader = FileSystemLoader(templates_dir)
     env = Environment(
         loader=loader,
         autoescape=select_autoescape(),
         trim_blocks=True,
         keep_trailing_newline=True)
 
-    args.output.mkdir(parents=True, exist_ok=True)
+    output_dir.mkdir(parents=True, exist_ok=True)
     for template_name in env.list_templates(filter_func=filter_template):
-        with (args.output / template_name).open("w") as file:
+        with (output_dir / template_name).open("w") as file:
             template = env.get_template(template_name)
             file.write(template.render(CONTEXT))
+
+def main():
+    """Build the Jinja templates for this site"""
+    args = get_args()
+    compile_templates(args.templates, args.output)
 
 if __name__ == "__main__":
     main()
