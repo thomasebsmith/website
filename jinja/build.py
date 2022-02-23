@@ -31,6 +31,7 @@ def get_args() -> Namespace:
     return parser.parse_args()
 
 def compile_templates(templates_dir: Path, output_dir: Path):
+    """Compile the templates in templates_dir, outputting to output_dir"""
     def filter_template(name):
         return name != "base.html" and name.endswith(".html")
 
