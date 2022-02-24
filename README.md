@@ -27,6 +27,9 @@ Serving HTTP on :: port 8000 (http://[::]:8000/) ...
 - Highlight important content
 - Make the site cross-browser compatible
 
+## Technical Details
+This site uses a combination of Jinja templates and static files.
+
 ## License
 This site is **not** released as open-source software. It is source-available;
 however, copyright and ownership are retained fully by Thomas Smith.
