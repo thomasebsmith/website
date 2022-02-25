@@ -29,6 +29,9 @@ Serving HTTP on :: port 8000 (http://[::]:8000/) ...
 
 ## Technical Details
 This site uses a combination of Jinja templates and static files.
+All templates excluding `base.html` are compiled from `jinja/templates`.
+Then, all files in `static` are added to the same folder. These files form
+the static site.
 
 ## License
 This site is **not** released as open-source software. It is source-available;
