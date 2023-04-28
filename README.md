@@ -36,3 +36,5 @@ the static site.
 ## License
 This site is **not** released as open-source software. It is source-available;
 however, copyright and ownership are retained fully by Thomas Smith.
+
+This site is copyright &copy; 2018-2023 Thomas Smith.
