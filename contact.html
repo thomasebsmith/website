@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Hi! I'm Thomas. You can get in touch with me here.">
+    <title>Thomas Smith | Contact</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+  </head>
+  <body>
+    <header>
+      <h1>Thomas Smith</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li class="selected"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <article>
+      <form method="POST"
+            action="https://cgi.www.umich.edu/cgi-bin/htmail/thsm%40umich.edu">
+        <div class="input-line">
+          From:
+          <input name="from" type="email" placeholder="Enter your email address">
+        </div>
+
+        <div class="input-line">
+          Subject:
+          <input name="subject" type="text" placeholder="Enter a subject">
+        </div>
+
+        <div class="input-line">
+          <input name="ccme" type="checkbox" checked>Send me a copy of this message
+        </div>
+
+        <p>Please enter a message in the text box below. It will be sent to Thomas
+           Smith when you click on the "Send Message" button.</p>
+
+        <textarea name="body"></textarea>
+
+        <input type="submit" value="Send Message">
+
+        <input name="successURL" type="hidden" value="https://thomasebsmith.github.io/contact.html">
+      </form>
+    </article>
+  </body>
+</html>
