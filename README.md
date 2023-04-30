@@ -1,9 +1,9 @@
 # Thomas Smith's Website
 This repository contains the code for Thomas Smith's website.
-The site is hosted statically on GitHub Pages at
+The site is hosted on GitHub Pages at
 [thomasebsmith.github.io](https://thomasebsmith.github.io). It contains
-information about Thomas, descriptions of his programming projects, and ways to
-contact him.
+information about Thomas, descriptions of his programming projects, and a
+contact form.
 
 ## Deployment
 This site can be deployed by cloning this repository, running its build script,
