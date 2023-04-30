@@ -14,11 +14,16 @@ JINJA_FILES = ${JINJA_BUILD} $(wildcard ${JINJA_TEMPLATES}/*.html)
 STATIC_FILES = $(wildcard ${STATIC_DIR}/*.html ${STATIC_DIR}/*.css \
 			   ${STATIC_DIR}/*.png)
 
+# bin directory within the venv
 VENV_BIN = ${VENV_DIR}/bin
+# pip executable within the venv
 VENV_PIP = ${VENV_BIN}/pip
+# python executable within the venv
 VENV_PYTHON = ${VENV_BIN}/python
 
+# release build output dir
 RELEASE_DIR = ${BUILD_DIR}/release
+# debug build output dir
 DEBUG_DIR = ${BUILD_DIR}/debug
 
 # Rules #
